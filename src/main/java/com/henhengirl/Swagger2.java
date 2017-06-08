@@ -14,8 +14,8 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 /**
  * Created by admin on 2017/5/1.
  */
-@Configuration
-@EnableSwagger2
+@Configuration //@Configuration 注解来让Spring来加载该类的配置
+@EnableSwagger2 //启动Swagger2
 public class Swagger2 {
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
